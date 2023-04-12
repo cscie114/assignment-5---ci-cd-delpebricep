@@ -1,0 +1,38 @@
+html {
+    font-family: 'Arial';
+}
+
+body {
+    background: #d7eaff;
+}
+
+.header {
+    display: flex;
+    flex-flow: row;
+    gap: 12px;
+}
+
+.navbar {
+    margin: 8px;
+}
+
+.navbar .title {
+    margin: 0px;
+    color: #003488;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-links li {
+    padding-right: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+}

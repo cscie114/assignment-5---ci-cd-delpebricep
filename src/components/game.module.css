@@ -1,0 +1,30 @@
+.info-container {
+    display: flex;
+    flex-flow: row;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.info-heading {
+    margin-top: 0px;
+}
+
+.cover-image {
+    width: 320px;
+    height: auto;
+    border: solid #1a1c21 4px;
+}
+
+.screenshot-gallery {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.screenshot-gallery img {
+    height: 200px;
+    width: auto;
+    border: solid #1a1c21 4px;
+}
