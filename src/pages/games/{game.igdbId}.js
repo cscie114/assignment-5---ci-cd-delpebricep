@@ -2,7 +2,7 @@ import * as React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../../components/Layout";
-import Game from "../../components/Game";
+import { Game } from "../../components/Game";
 import { GameReview } from "../../components/GameReview";
 
 

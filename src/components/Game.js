@@ -70,7 +70,7 @@ const ReleaseDate = ({ dateUnix }) => {
 
 
     // Display that string
-    return <p><b>Original Release Date:</b>&nbsp;{dateStr}</p>;
+    return <p data-testid="release-date"><b>Original Release Date:</b>&nbsp;{dateStr}</p>;
 };
 
 
@@ -102,7 +102,7 @@ const PlatformList = ({ platforms }) => {
         
     
     // Display that list
-    return <p><b>Platforms:</b>&nbsp;{list}</p>
+    return <p data-testid="platform-list"><b>Platforms:</b>&nbsp;{list}</p>
 };
 
 
@@ -115,7 +115,7 @@ const GenreList = ({ genres }) => {
 
     // Turn the array into a comma-separated string and render it
     const list = genres.map(g => g.name).join(', ');
-    return <p><b>Genres:</b>&nbsp;{list}</p>;
+    return <p data-testid="genre-list"><b>Genres:</b>&nbsp;{list}</p>;
 };
 
 
@@ -152,4 +152,4 @@ const ScreenshotGallery = ({ title, images }) => {
 };
 
 
-export default Game;
+export { Game, GenreList, PlatformList, ReleaseDate };

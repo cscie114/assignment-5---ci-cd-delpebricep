@@ -13,7 +13,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "eslint --ext js,jsx src"
+    "lint": "eslint --ext js,jsx src",
+    "test": "npm run test:unit -- -u",
+    "test:unit": "jest --passWithNoTests"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^4.0.0",
@@ -31,11 +33,14 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "babel-jest": "^29.5.0",
     "babel-preset-gatsby": "^3.8.0",
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^29.5.0"
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0"
   }
 }
