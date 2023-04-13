@@ -138,7 +138,7 @@ async function fetchGames() {
 
 // This function fetches video game console data from the IGDB API.
 async function fetchPlatforms() {
-    let data = []
+    let data = [];
     
     try {
         data = await igdbFetch('platforms', `
