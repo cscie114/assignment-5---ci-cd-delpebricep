@@ -24,8 +24,8 @@ const Quote = () => {
                 setQuote(quoteJson);
             })
             // If anything goes wrong, log an error
-            .catch(() => {
-                console.error("Could not fetch quote data.");
+            .catch((error) => {
+                console.error(error);
             });
     }, []);
     // The dependencies array is empty.
