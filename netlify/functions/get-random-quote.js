@@ -5,9 +5,7 @@ const handler = async function () {
     try {
         const response = await fetch("https://api.quotable.io/quotes/random", {
             headers: {
-                "Accept": "application/json",
-                "Content-Type": "text/plain",
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+                "Accept": "application/json"
             }
         });
 
