@@ -1,0 +1,32 @@
+.quote-container {
+    width: 65%;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    background: #f8f8f8;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.quote-container .heading {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.quote-container .text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-style: italic;
+}
+
+.quote-container .autor {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+.quote-container .credit {
+    font-size: small;
+}

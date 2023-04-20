@@ -1,6 +1,7 @@
-import * as React from "react"
+import React from "react"
 import { Link } from "gatsby";
 import Layout from "../components/Layout";
+import Quote from "../components/Quote";
 import { StaticImage } from "gatsby-plugin-image";
 
 
@@ -21,6 +22,8 @@ const IndexPage = () => {
 
                 <p>This is the <b>Gatsby Game Museum</b>. We document and display some of the world&apos;s top video games. Some of the games on display are reviewed by our curators.</p>
                 <p>Start exploring by <Link to="/games">browsing the full list of games</Link> or <Link to="/platforms">selecting a platform</Link>.</p>
+
+                <Quote />
             </div>
 
         </Layout>
