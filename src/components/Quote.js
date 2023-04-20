@@ -15,7 +15,7 @@ const Quote = () => {
     // Run the following every time the component is rendered (such as when the page its on is accessed)
     useEffect(() => {
         // Make a call to the serverless function
-        fetch("/.netlify/functions/getRandomQuote/", { method: "GET" })
+        fetch("/.netlify/functions/get-random-quote/", { method: "GET" })
             .then(response => {
                 return response.json();
             })
