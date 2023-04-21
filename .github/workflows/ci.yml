@@ -28,6 +28,10 @@ jobs:
     - run: npm run build
     
     - name: Deploy to Netlify
+      # The commented parameters below are based on an example givien in class.
+      # Using these, GitHub deploys the site to Netlify in production mode.
+      # However, serverless functions do not work for some reason.
+      # --------------------------------------------------------------------------
       # uses: nwtgck/actions-netlify@v2.0
       # with:
       #   production-branch: main
@@ -36,6 +40,11 @@ jobs:
       #   production-deploy: true
       #   github-token: ${{ secrets.GITHUB_TOKEN }}
       #   deploy-message: "Deploying from GitHub Actions"
+      # --------------------------------------------------------------------------
+
+      # I could not figure out why this was happening.
+      # I used another Netlify Action from the GitHub marketplace to get it working properly.
+      # Instructions are below:
       uses: South-Paw/action-netlify-cli@1.0.1
       id: netlify
       with:
