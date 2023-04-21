@@ -6,6 +6,8 @@ import * as styles from "./quote.module.css";
 // It then displays the quote.
 const Quote = () => {
 
+    console.log(process.env.AWS_LAMBDA_JS_RUNTIME);
+
     // State data for the quote
     const [quote, setQuote] = useState({ 
         content: "", 
