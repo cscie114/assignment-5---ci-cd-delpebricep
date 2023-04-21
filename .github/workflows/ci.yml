@@ -5,8 +5,7 @@ env:
   IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
   IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
   IGDB_ACCESS_TOKEN: ${{ secrets.IGDB_ACCESS_TOKEN }}
-  AWS_LAMBDA_JS_RUNTIME: "nodejs16.x"
-  
+
 on:
   push:
     branches: [ "main" ]
@@ -39,3 +38,4 @@ jobs:
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        AWS_LAMBDA_JS_RUNTIME: "nodejs16.x"
