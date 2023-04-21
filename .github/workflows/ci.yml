@@ -33,7 +33,6 @@ jobs:
         production-branch: main
         publish-dir: './public'
         functions-dir: './netlify/functions'
-        netlify-config-path: ./netlify.toml
         github-token: ${{ secrets.GITHUB_TOKEN }}
         deploy-message: "Deploying from GitHub Actions"
       env:
