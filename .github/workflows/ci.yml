@@ -36,7 +36,10 @@ jobs:
       #   production-deploy: true
       #   github-token: ${{ secrets.GITHUB_TOKEN }}
       #   deploy-message: "Deploying from GitHub Actions"
-      run: npx netlify deploy --dir="./public" --functions="./netlify/functions" --prod
+      uses: South-Paw/action-netlify-cli@1.0.1
+      id: netlify
+      with:
+          args: deploy --json --prod --dir './public' --functions './netlify/functions'
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
